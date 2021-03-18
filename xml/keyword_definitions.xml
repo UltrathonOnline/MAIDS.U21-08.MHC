@@ -1,0 +1,20 @@
+<root name="SHORT_DATASET_NAME">
+    <!-- Do not change Keyword_Questions as these are defined by the MAIDS specification -->
+    <Keyword_Questions name="Questions">
+        <Q0 name="KEYWORDS">What is the ID of the keyword?</Q0>
+        <Q1 name="Keyword">What is a keyword or term used in MAIDS that you believe would be helpful to describe the keyword?</Q1>
+        <Q2 name="Definition">What is the definition of the keyword?</Q2>
+        <Q3 name="Link">What is the link to online material further discussing of the keyword?</Q3>
+    </Keyword_Questions>
+    <!-- Edit the Keywords_Dataset below to describe your dataset -->
+    <Keywords_Dataset name="Keywords Dataset">
+        <!-- Enumerate & define keywords/concepts for defining -->
+        <!-- Use this template for as many definitions as you would like to define -->
+        <Keyword_1 name="Keyword 1">
+            <A0 name="KEYWORDID" />
+            <A1 name="Keyword" />
+            <A2 name="Definition" />
+            <A3 name="Link" />
+        </Keyword_1>
+    </Keywords_Dataset>
+</root>

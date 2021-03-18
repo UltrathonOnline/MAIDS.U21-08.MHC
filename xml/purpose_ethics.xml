@@ -1,0 +1,112 @@
+<!-- Edit the Answers below to describe your dataset -->
+<!-- Do not change Questions as these are defined by the MAIDS specification -->
+<root name="SHORT_DATASET_NAME"><questionnaire name="MAIDS Questionnaire">
+<categorty_1 name="Motivation">
+    <Questions>
+        <Q0>For what purpose was the dataset created?</Q0>
+        <Q1>Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)?</Q1>
+        <Q2>Who funded the creation of the dataset?</Q2>
+        <Q3>Any other comments?</Q3>
+    </Questions>
+    <Answers>
+        <A0 /><A1 /><A2 /><A3 />
+    </Answers>
+</categorty_1>
+<categorty_2 name="Composition">
+    <Questions>
+        <Q0>What do the instances that comprise the dataset represent (e.g., samples, images, people)?</Q0>
+        <Q1>How many instances are there in total?</Q1>
+        <Q2>Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set?</Q2>
+        <Q3>What data does each instance consist of?</Q3>
+        <Q4>Is there a label, target, or outcome (e.g., mortality) associated with each instance?</Q4>
+        <Q5>Is any information missing from individual instances?</Q5>
+        <Q6>Are relationships between individual instances made explicit (e.g., familial links, or samples derived from the same patient or same exposure)?</Q6>
+        <Q7>Are there recommended data splits (e.g., training, development/validation, testing)?</Q7>
+        <Q8>Are there any errors, sources of noise, or redundancies in the dataset?</Q8>
+        <Q9>Is the dataset self-contained, or does it link to or otherwise rely on external resources (e.g., websites, public databases, other datasets and/or private silos)?</Q9>
+        <Q10>Does the dataset contain data that might be considered confidential (e.g., data that is protected by legal privilege or by doctor-patient confidentiality, data that includes the content of individuals&#8217; non-public communications)?</Q10>
+        <Q11>Does the dataset contain data that, if viewed directly, might be offensive, insulting, threatening, or might otherwise cause anxiety?</Q11>
+        <Q12>Does the dataset not relate to people (e.g., animals, cell lines, environment)?</Q12>
+        <Q13>Does the dataset identify any subpopulations (e.g., by age, gender, etc.)?</Q13>
+        <Q14>Is it possible to identify individuals (i.e., one or more natural persons), either directly or indirectly (i.e., in combination with other data) from the dataset?</Q14>
+        <Q15>Does the dataset contain data that might be considered sensitive in any way (e.g., data that reveals racial or ethnic origins, sexual orientations, religious beliefs, political opinions or union memberships, or locations; financial or health data; biometric or genetic data; forms of government identification, such as social security numbers; criminal history)?</Q15>
+        <Q16>Any other comments?</Q16>
+    </Questions>
+    <Answers>
+        <A0 /><A1 /><A2 /><A3 /><A4 /><A5 /><A6 /><A7 /><A8 /><A9 /><A10 /><A11 /><A12 /><A13 /><A14 /><A15 /><A16 />
+    </Answers>
+</categorty_2>
+<categorty_3 name="Collection Process">
+    <Questions>
+        <Q0>How was the data associated with each instance acquired?</Q0>
+        <Q1>What mechanisms or procedures were used to collect the data (e.g., hardware apparatus or sensor, manual human curation, software program, software API)?</Q1>
+        <Q2>If the dataset is a sample from a larger set, what was the sampling strategy (e.g., deterministic, probabilistic with specific sampling probabilities)?</Q2>
+        <Q3> Who was involved in the data collection process (e.g., students, crowdworkers, contractors) and how were they compensated (e.g., salaried, immaterial through prizes / authorship / etc) and how much (e.g., according to competitive scales mandated by [insert body or institution])?</Q3>
+        <Q4>Over what timeframe was the data collected?</Q4>
+        <Q5>Were any ethical review processes conducted (e.g., by an institutional review board)?</Q5>
+        <Q6>Does the dataset not relate to people (e.g., animals, cell lines, environment)?</Q6>
+        <Q7>Did you collect the data from the individuals in question directly, or obtain it via third parties or other sources (e.g., websites)?</Q7>
+        <Q8>Were the individuals in question notified about the data collection?</Q8>
+        <Q9>Did the individuals in question consent to the collection and use of their data?</Q9>
+        <Q10> If consent was obtained, were the consenting individuals provided with a mechanism to revoke their consent in the future or for certain uses?</Q10>
+        <Q11>Has an analysis of the potential impact of the dataset and its use on data subjects (e.g., a data protection impact analysis) been conducted?</Q11>
+        <Q12>Any other comments?</Q12>
+    </Questions>
+    <Answers>
+        <A0 /><A1 /><A2 /><A3 /><A4 /><A5 /><A6 /><A7 /><A8 /><A9 /><A10 /><A11 /><A12 />
+    </Answers>
+</categorty_3>
+<categorty_4 name="Preprocessing, Cleaning, Labling">
+    <Questions>
+        <Q0>Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)?</Q0>
+        <Q1>Was the &#8220;raw&#8221; data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)?</Q1>
+        <Q2>Is the software used to preprocess/clean/label the instances available?</Q2>
+        <Q3>Any other comments?</Q3>
+    </Questions>
+    <Answers>
+        <A0 /><A1 /><A2 /><A3 />
+    </Answers>
+</categorty_4>
+<categorty_5 name="Uses">
+    <Questions>
+        <Q0>Has the dataset been used for any tasks already?</Q0>
+        <Q1>Is there a repository that links to any or all papers or systems that use the dataset?</Q1>
+        <Q2>What (other) tasks could the dataset be used for?</Q2>
+        <Q3>Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses?</Q3>
+        <Q4>Are there tasks for which the dataset should not be used?</Q4>
+        <Q5>Any other comments?</Q5>
+    </Questions>
+    <Answers>
+        <A0 /><A1 /><A2 /><A3 /><A4 /><A5 />
+    </Answers>
+</categorty_5>
+<categorty_6 name="Distribution">
+<Questions>
+    <Q0>Will the dataset be distributed to third parties outside of the entity (e.g., company, institution, organization) on behalf of which the dataset was created</Q0>
+    <Q1>How will the dataset be distributed (e.g., tarball on website, API, GitHub)?</Q1>
+    <Q2>When will the dataset be distributed?</Q2>
+    <Q3>Will the dataset be distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?</Q3>
+    <Q4>Have any third-parties imposed IP-based or other restrictions on the data associated with the instances?</Q4>
+    <Q5>Do any export controls or other regulatory restrictions apply to the dataset or to individual instances?</Q5>
+    <Q6>Any other comments?</Q6>
+</Questions>
+<Answers>
+    <A0 /><A1 /><A2 /><A3 /><A4 /><A5 /><A6 />
+</Answers>
+</categorty_6>
+<categorty_7 name="Maintenance">
+    <Questions>
+        <Q0>Who is supporting/hosting/maintaining the dataset?</Q0>
+        <Q1>How can the owner/curator/manager of the dataset be contacted (e.g., email address)?</Q1>
+        <Q2>Is there an erratum?</Q2>
+        <Q3>Will the dataset be updated (e.g., to correct labeling errors, add new instances, delete instances)?</Q3>
+        <Q4>If the dataset relates to people, are there applicable limits on the retention of the data associated with the instances (e.g., were individuals in question told that their data would be retained for a fixed period of time and then deleted)?</Q4>
+        <Q5>Will older versions of the dataset continue to be supported/hosted/maintained?</Q5>
+        <Q6>If others want to extend/augment/build on/contribute to the dataset, is there a mechanism for them to do so?</Q6>
+        <Q7>Any other comments?</Q7>
+    </Questions>
+    <Answers>
+        <A0 /><A1 /><A2 /><A3 /><A4 /><A5 /><A6 /><A7 />
+    </Answers>
+</categorty_7>
+</questionnaire></root>
