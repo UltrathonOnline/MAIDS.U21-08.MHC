@@ -140,7 +140,7 @@
         </synthetic>
     </scores>
     <thematic>
-        <filename />
+        <filename>thematic.png</filename>
     </thematic>
     <abstract>
         <question>Please provide a brief abstract describing this dataset.</question>
@@ -202,10 +202,10 @@
         </answer>
     </figures>
     <subsetAssociations>
-        <filename />
+        <filename>datasetassociations.jpg</filename>
         <legend>
             <question>What is the legend for the figure describing how subsets are associated to one another?</question>
-            <answer />
+            <answer>An example of how 3 different subsets are connected by a patient identifier. The aspect ratio is 5 to 3.5.</answer>
         </legend>
     </subsetAssociations>
 </root>
