@@ -5,6 +5,10 @@
         <question>What is the title of your dataset?</question>
         <answer />
     </title>
+    <repository>
+        <question>What is the URL of the repository for this MAIDS description on Github?</question>
+        <answer />
+    </repository>
     <authors>
         <question>Who are the dataset's authors?</question>
         <answer>

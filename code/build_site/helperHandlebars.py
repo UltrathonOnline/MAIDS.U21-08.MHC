@@ -29,7 +29,7 @@ def getTemplate(template):
         #:> Templates for KEYWORDS and DEFINITIONS
         "definition" : "{{definition:{{id:\"{ID}\",keyword:\"{KW}\",definition:\"{DEFINITION}\",link:\"{LINK}\"}}}},\n",
         #:> Templates for ABOUT
-        "about"      : "title:\"{TITLE}\",authors:[{AUTHORS}],scores:{{ {DOCSCORE},{FAIRSCORE},{MAGSCORE},{SYNSCORE}, }},thematic:{{ filename:\"{THEMEFILE}\", }},abstract:\"{ABSTRACT}\",usecases:[{USECASES}],research:{{main:\"{MAINRES}\",secondary:\"{SECONDRES}\"}},figures:[{FIGURES}],subsetAssociations:{{filename: \"{SUBSETFILE}\",legend:\"{SUBSETLEGEND}\",}}",
+        "about"      : "title:\"{TITLE}\",repository:\"{REPO}\",authors:[{AUTHORS}],scores:{{ {DOCSCORE},{FAIRSCORE},{MAGSCORE},{SYNSCORE}, }},thematic:{{ filename:\"{THEMEFILE}\", }},abstract:\"{ABSTRACT}\",usecases:[{USECASES}],research:{{main:\"{MAINRES}\",secondary:\"{SECONDRES}\"}},figures:[{FIGURES}],subsetAssociations:{{filename: \"{SUBSETFILE}\",legend:\"{SUBSETLEGEND}\",}}",
         "author"     : "{{author: {{firstnames: \"{FIRSTNAMES}\", lastname: \"{LASTNAME}\", email: \"{EMAIL}\",}},}},",
         "score"      : "{TYPE}: {{score:\"{SCORE}\",comment:\"{COMMENT}\",evaluator:{{entityType:\"{ENTITYTYPE}\",entityName:\"{ENTITYNAME}\",contactName:\"{CONTACTNAME}\",contactEmail:\"{CONTACTEMAIL}\",}},}}",
         "usecase"    : "{{usecase: \"{USECASE}\",}},",
@@ -154,7 +154,6 @@ def formatHTML_DEFINITION(xmlDict):
     '''
     This function specifically formats KEYWORDS_and_DEFINITIONS data.
     '''
-    print (xmlDict)
     definitions = ""
     keywords = xmlDict['Keywords_Dataset']
     i = 0
@@ -214,6 +213,7 @@ def formatHTML_ABOUT(xmlDict):
     #Format about & return
     about = getTemplate("about").format(
         TITLE     = xmlDict["title"]["answer"],
+        REPO      = xmlDict["repository"]["answer"],
         AUTHORS   = authors,
         DOCSCORE  = scores["document"],
         FAIRSCORE = scores["fairness"],
