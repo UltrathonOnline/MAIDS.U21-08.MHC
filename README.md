@@ -2,7 +2,7 @@
 
 The official template for Medical AI Datasheets.
 
-*v0.1-alpha*
+*v0.2-alpha*
 
 MAIDS is currently being prototyped for the [Copenhagen Ultrathon on Precision Medicine](https://ultrathon.online) where you will find several examples.
 
