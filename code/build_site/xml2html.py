@@ -1,5 +1,5 @@
-from helperHandlebars import getHTML
-import bs4,argparse
+from helperHandlebars import getHTML, getFIGURES
+import bs4,argparse,os,shutil
 
 parser = argparse.ArgumentParser(prog="xml2html.py", description = "Convert XML to index.html with a handlebars data object.")
 parser.add_argument("-u", "--use", type=str, help="Name a directory within ./xml/ that contains prefilled XML descriptions.")
@@ -31,3 +31,16 @@ with open("./docs/index.html", 'w') as o:
     root = template.format(PUT_TEMPLATE_HERE = args.template, PUT_HANDLE_HERE = handleFunction)
     root = bs4.BeautifulSoup(root, "html.parser")
     o.write(root.prettify())
+
+msg = ""
+for fName in getFIGURES(f"./xml{egDir}/about.xml"):
+    copyFrom = f"./supplementary/figures/{fName}"
+    copyTo   = f"./docs/images/figures/{fName}"
+    if os.path.isfile(copyFrom):
+        shutil.copyfile(copyFrom, copyTo)
+    else:
+        msg += f"  * {fName}\n"
+
+if len(msg) != 0:
+    msg = f"Could not find the following figures in './supplementary/figures/':\n{msg}"
+    print (f"{msg}\nThis is expected if -u example is used." if args.use == "example" else msg)

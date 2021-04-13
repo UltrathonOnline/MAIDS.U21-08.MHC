@@ -202,13 +202,13 @@ def formatHTML_ABOUT(xmlDict):
         figures += getTemplate("figure").format(FILENAME = figure["filename"], TITLE = figure["title"], LEGEND = figure["legend"])
 
     #Handle EMPTY thematic
-    if (not xmlDict["thematic"]["filename"]):
-        xmlDict["thematic"]["filename"] = "thematic.png"
+    # if (not xmlDict["thematic"]["filename"]):
+    #     xmlDict["thematic"]["filename"] = "thematic.png"
     
     #Handle EMPTY subsetAssociations
-    if (not xmlDict["subsetAssociations"]["filename"]):
-        xmlDict["subsetAssociations"]["filename"] = "datasetassociations.jpg"
-        xmlDict["subsetAssociations"]["legend"]["answer"] = "An example of how 3 different subsets are connected by a patient identifier. The aspect ratio is 5 to 3.5."
+    # if (not xmlDict["subsetAssociations"]["filename"]):
+    #     xmlDict["subsetAssociations"]["filename"] = "datasetassociations.jpg"
+    #     xmlDict["subsetAssociations"]["legend"]["answer"] = "An example of how 3 different subsets are connected by a patient identifier. The aspect ratio is 5 to 3.5."
 
     #Format about & return
     about = getTemplate("about").format(
@@ -241,6 +241,13 @@ def getHTML(xml, checkname = None):
     xmldict = parseXML(xml, checkname)
     html = formatHTML(xmldict, xmldict["name"])
     return (html)
+
+def getFIGURES(xml):
+    xmldict = parseXML(xml, "ABOUT")
+    figures = [figDict['filename'] for figName, figDict in xmldict['figures']['answer'].items()]
+    figures.append(xmldict['subsetAssociations']['filename'])
+    figures.append(xmldict['thematic']['filename'])
+    return (figures)
 
 # WRITE HTML HANDLEBARS OBJECT
 if __name__ == '__main__':
