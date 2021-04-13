@@ -1,4 +1,4 @@
-![](images/banner.png?raw=true)
+![](banner.png?raw=true)
 
 The official template for Medical AI Datasheets.
 
