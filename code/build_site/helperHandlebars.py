@@ -156,6 +156,8 @@ def formatHTML_DEFINITION(xmlDict):
     '''
     definitions = ""
     keywords = xmlDict['Keywords_Dataset']
+    if not keywords or len(keywords) == 0:
+        return (definitions)
     i = 0
     for kwid in keywords.keys():
         i += 1
