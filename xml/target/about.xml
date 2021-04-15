@@ -1,0 +1,229 @@
+<!-- Edit the answers below to describe your dataset -->
+<!-- Do not change questions as these are defined by the MAIDS specification -->
+<root name="ABOUT">
+    <title>
+        <question>What is the title of your dataset?</question>
+        <answer>Prediction of peptide-epitope binding – the key to immune response, vaccine design and drug design</answer>
+    </title>
+    <repository>
+        <question>What is the URL of the repository for this MAIDS description on Github?</question>
+        <answer>https://github.com/UltrathonOnline/MAIDS.U21-08.MHC</answer>
+    </repository>
+    <authors>
+        <question>Who are the dataset's authors?</question>
+        <answer>
+            <author_1>
+                <!-- Primary contact that must always be specified -->
+                <firstnames>Frederik O.</firstnames>
+                <lastname>Bagger</lastname>
+                <email>frederik.otzen.bagger@regionh.dk</email>
+            </author_1>
+            <author_2>
+                <firstnames>Marek</firstnames>
+                <lastname>Prachar</lastname>
+                <email></email>
+            </author_2>
+            <author_3>
+                <firstnames>Sune</firstnames>
+                <lastname>Justesen</lastname>
+                <email></email>
+            </author_3>
+            <author_4>
+                <firstnames>Daniel B.</firstnames>
+                <lastname>Steen-Jensen</lastname>
+                <email></email>
+            </author_4>
+        </answer>
+    </authors>
+    <scores>
+        <document>
+            <score>
+                <question>What is the document score, as defined by MAIDS?</question>
+                <answer>1</answer>
+            </score>
+            <comment>
+                <question>Why was this score given? Provide a full justification.</question>
+                <answer></answer>
+            </comment>
+            <evaluator>
+                <entityType>
+                    <question>What gave the score? [algorithm / group / committee / person]</question>
+                    <answer></answer>
+                </entityType>
+                <entityName>
+                    <question>Name of algorithm / group / committee / person who gave the score?</question>
+                    <answer></answer>
+                </entityName>
+                <contactName>
+                    <question>Who should be contacted to query the score?</question>
+                    <answer></answer>
+                </contactName>
+                <contactEmail>
+                    <question>What is the contact person's email address?</question>
+                    <answer></answer>
+                </contactEmail>
+            </evaluator>
+        </document>
+        <fairness>
+            <score>
+                <question>What is the fairness score given, as defined by MAIDS?</question>
+                <answer>?</answer>
+            </score>
+            <comment>
+                <question>Why was this score given? Provide a full justification.</question>
+                <answer></answer>
+            </comment>
+            <evaluator>
+                <entityType>
+                    <question>What gave the score? [algorithm / group / committee / person]</question>
+                    <answer></answer>
+                </entityType>
+                <entityName>
+                    <question>Name of algorithm / group / committee / person who gave the score?</question>
+                    <answer></answer>
+                </entityName>
+                <contactName>
+                    <question>Who should be contacted to query the score?</question>
+                    <answer></answer>
+                </contactName>
+                <contactEmail>
+                    <question>What is the contact person's email address?</question>
+                    <answer></answer>
+                </contactEmail>
+            </evaluator>
+        </fairness>
+        <magnitude>
+            <score>
+                <question>What is the magnitude score given, as defined by MAIDS?</question>
+                <answer>3</answer>
+            </score>
+            <comment>
+                <question>Why was this score given? Provide a full justification.</question>
+                <answer></answer>
+            </comment>
+            <evaluator>
+                <entityType>
+                    <question>What gave the score? [algorithm / group / committee / person]</question>
+                    <answer></answer>
+                </entityType>
+                <entityName>
+                    <question>Name of algorithm / group / committee / person who gave the score?</question>
+                    <answer></answer>
+                </entityName>
+                <contactName>
+                    <question>Who should be contacted to query the score?</question>
+                    <answer></answer>
+                </contactName>
+                <contactEmail>
+                    <question>What is the contact person's email address?</question>
+                    <answer></answer>
+                </contactEmail>
+            </evaluator>
+        </magnitude>
+        <synthetic>
+            <score>
+                <question>What is the synthetic score given, as defined by MAIDS?</question>
+                <answer>E</answer>
+            </score>
+            <comment>
+                <question>Why was this score given? Provide a full justification.</question>
+                <answer></answer>
+            </comment>
+            <evaluator>
+                <entityType>
+                    <question>What gave the score? [algorithm / group / committee / person]</question>
+                    <answer></answer>
+                </entityType>
+                <entityName>
+                    <question>Name of algorithm / group / committee / person who gave the score?</question>
+                    <answer></answer>
+                </entityName>
+                <contactName>
+                    <question>Who should be contacted to query the score?</question>
+                    <answer></answer>
+                </contactName>
+                <contactEmail>
+                    <question>What is the contact person's email address?</question>
+                    <answer></answer>
+                </contactEmail>
+            </evaluator>
+        </synthetic>
+    </scores>
+    <thematic>
+        <filename>thematic.jpg</filename>
+    </thematic>
+    <abstract>
+        <question>Please provide a brief abstract describing this dataset.</question>
+        <answer>Previous efforts of predicting peptide:MHC binding have been based on training data have been based on affinity (ability to bind) and not stability (staying bound). We have found the latter to be much more predictive for actually getting an immune reaction. Being able to predict immune response is critical for vaccine design (you want immune response), drug design (you don’t want an immune response). The dataset consists of two types of data one is precise and expensive, the other less precise (binding/non-binding) and less expensive. Being able to make the full use the cheap data in a model would mean an explosion of available data for this type of problems.</answer>
+    </abstract>
+    <usecases>
+        <question>Please provide one or more short use cases to highlight what this dataset might be used for. These should summarise the main and secondary research questions into single sentence objectives. You may also use this section to expand on possible uses not discussed in the research questions.</question>
+        <answer>
+            <usecase_1 />
+        </answer>
+    </usecases>
+    <research>
+        <main>
+            <question>Please state, in detail, the main hypothesis for which this dataset was created.</question>
+            <answer>Predict stability of binding from peptide sequence. Identifying and understanding receptor-ligand interactions is vital to comprehend biology on a cellular level. In the case of the immune systems’ ability to recognize pathogens and elicit a cellular immune response the single most selective step is binding of peptides to the Major Histocompatibility Complex (MHC). The MHC is highly polymorphic and insights into the mechanisms governing the interactions in the binding cleft requires great investments in experimental works. Artificial Neural Networks have been applied as a high performing model to predict binding of peptides to the MHC class I, based on training from experimental measurements. However, the training data have been based on affinity (ability to bind) and not stability (staying bound). We have found the latter to be much more predictive for getting an immune reaction. Being able to predict immune response is critical for vaccine design (you want immune response), drug design (you don’t want an immune response). The main technical challenge is the integration of data from several types of experiments, and the ability of coping with different lengths of peptide of input. Solving this problem will have large impact on understanding of the immune system and scientific and commercial efforts within vaccines (virus, personalized cancer vaccines) and production of safe drugs.</answer>
+        </main>
+        <secondary>
+            <question>Please state, in detail, any other hypotheses which this dataset would be able to address.</question>
+            <answer>Explore data enrichment from public sources, optimal peptide encoding and attention models for varying length peptides. Test model generalization on public data.</answer>
+        </secondary>
+    </research>
+    <figures>
+        <question>Please entitle and provide a legend for each figure found in "./images/figures/".</question>
+        <answer>
+            <!-- Template: <figure_1><filename /><title /><legend /></figure_1> -->
+            <figure_1>
+                <filename>Picture1.jpg</filename>
+                <title>Triggering the adaptive immune response</title>
+                <legend>ADA formation, detected tumor cell killed, detected infected cells killed</legend>
+            </figure_1>
+            <figure_2>
+                <filename>Picture2.jpg</filename>
+                <title>Data generation</title>
+                <legend>Binding and stability assay of MHCII through to data readout</legend>
+            </figure_2>
+        </answer>
+    </figures>
+    <subsetAssociations>
+        <filename>subset.jpg</filename>
+        <legend>
+            <question>What is the legend for the figure describing how subsets are associated to one another?</question>
+            <answer></answer>
+        </legend>
+    </subsetAssociations>
+    <populationSelection>
+        <rootNode>
+            <nodeid>0</nodeid> <!-- Do not change. Use nodeids as reference points. -->
+            <name />
+            <description />
+            <sources>
+                <!-- INSERT TEMPLATE SOURCES HERE  -->
+            </sources>
+        </rootNode>
+        <!-- INSERT TEMPLATE NODES HERE AND REFERENCE THEIR PARENTS -->
+    </populationSelection>
+</root>
+
+<!-- NODE TEMPLATES FOR DEFINING THE POPULATION SELECTION GRAPH 
+<node>
+    <nodeid />
+    <name />
+    <description />
+    <location />
+</node>
+
+<source>
+    <entityName />
+    <entityAddress />
+    <contactPerson />
+    <contactEmail />
+    <dataDescription />
+    <instancesContributed />
+    <beginDateCollection />
+    <endDateCollection />
+</source>
+-->
